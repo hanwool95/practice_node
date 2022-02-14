@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+.img-box{
+    text-align: center;
+}
+
+@font-face {
+    font-family: "Nanum Gothic";
+    src: url("/font/NanumGothic-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 태그 제작도 가능. */
+nskr {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+ng {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*전체적용시 별표 사용*/
+/**{*/
+/*    font-family: 'Noto Sans KR', sans-serif;*/
+/*}*/
