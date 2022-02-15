@@ -1,0 +1,45 @@
+<%- include("../partial/header")%>
+
+<%- include("./partials/user_header")%>
+
+
+<form>
+  <div class="row mb-3">
+    <label for="userName" class="col-sm-2 col-form-label">이름</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="userName">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="userAge" class="col-sm-2 col-form-label">나이</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="userAge">
+    </div>
+  </div>
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">과정</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+            학부과정
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+            석사과정
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+        <label class="form-check-label" for="gridRadios3">
+            박사과정
+        </label>
+      </div>
+    </div>
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+
+<%- include("../partial/footer")%>

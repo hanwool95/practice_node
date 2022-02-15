@@ -1,5 +1,9 @@
 <%- include("../partial/header")%>
 <%- include("./partials/user_header")%>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <a href="/user/new"><button class="btn btn-primary" type="button">새 사용자 등록</button></a>
+</div>
         <%= userList %>
         <ul>
             <% for (user of userList) { %>

@@ -2,6 +2,8 @@ const express = require("express")
 const app = express()
 const dotenv = require("dotenv")
 const user_router = require("./routes/user")
+const mongoose = require("mongoose")
+
 dotenv.config()
 
 // npm install nodemon -> 자동 수정 가능.
@@ -19,7 +21,7 @@ app.set("view engine", 'ejs')
 app.use(express.static(__dirname + "/public"))
 
 app.get('/', (req, res) =>{
-    res.render('index')
+    res.render('index', {menu: "home"})
 })
 
 
