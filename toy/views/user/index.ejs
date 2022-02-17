@@ -4,10 +4,11 @@
 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <a href="/user/new"><button class="btn btn-primary" type="button">새 사용자 등록</button></a>
 </div>
-        <%= userList %>
+        <!--<%= userList %>-->
         <ul>
             <% for (user of userList) { %>
-                <li> <a href="/user/<%= user%>"><%= user%></a></li>
+                <li> <a href="/user/<%= user.name%>"><%= user.name%></a></li>
+                <%= user.age%> <%= user.status%>
 
             <% } %>
 

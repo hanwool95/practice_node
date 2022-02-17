@@ -1,6 +1,11 @@
 <%- include("../partial/header")%>
 
 <%- include("./partials/user_header")%>
-        <h1>Hello <%= userName %></h1>
+        <h2>Hello <%= user.name %></h2>
+        <ul>
+            <li>나이: <%= user.age%></li>
+            <li>과정: <%= user.status%></li>
+        </ul>
 
+        <a href="/user"><button class="btn btn-primary" type="button">돌아가고 싶나 닝겐?</button></a>
 <%- include("../partial/footer")%>

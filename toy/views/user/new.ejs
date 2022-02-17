@@ -3,36 +3,36 @@
 <%- include("./partials/user_header")%>
 
 
-<form>
+<form method="POST" action="/user/create">
   <div class="row mb-3">
     <label for="userName" class="col-sm-2 col-form-label">이름</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="userName">
+      <input type="text" class="form-control" id="userName" name="userName">
     </div>
   </div>
   <div class="row mb-3">
     <label for="userAge" class="col-sm-2 col-form-label">나이</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="userAge">
+      <input type="text" class="form-control" id="userAge" name="userAge">
     </div>
   </div>
   <fieldset class="row mb-3">
     <legend class="col-form-label col-sm-2 pt-0">과정</legend>
     <div class="col-sm-10">
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <input class="form-check-input" type="radio" name="status" id="gridRadios1" value="학부생" checked>
         <label class="form-check-label" for="gridRadios1">
             학부과정
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <input class="form-check-input" type="radio" name="status" id="gridRadios2" value="석사생">
         <label class="form-check-label" for="gridRadios2">
             석사과정
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+        <input class="form-check-input" type="radio" name="status" id="gridRadios3" value="갓박사">
         <label class="form-check-label" for="gridRadios3">
             박사과정
         </label>
