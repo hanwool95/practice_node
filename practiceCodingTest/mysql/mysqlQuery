@@ -1,0 +1,21 @@
+// Select
+SELECT * FROM ANIMAL_INS ORDER BY ANIMAL_ID;
+
+// Max
+
+SELECT MAX(DATETIME) FROM ANIMAL_INS
+
+// GroupBY
+https://extbrain.tistory.com/56
+(SELECT ANIMAL_TYPE, COUNT(*) as count FROM ANIMAL_INS WHERE ANIMAL_TYPE = "Cat" GROUP BY ANIMAL_TYPE)
+UNION
+(SELECT ANIMAL_TYPE, COUNT(*) as count FROM ANIMAL_INS WHERE ANIMAL_TYPE = "Dog" GROUP BY ANIMAL_TYPE);
+
+// is null
+https://solbel.tistory.com/1934
+SELECT ANIMAL_ID FROM ANIMAL_INS where name is null;
+
+// join
+https://yoo-hyeok.tistory.com/98
+SELECT a.ANIMAL_ID, a.NAME FROM ANIMAL_OUTS as a Left Join ANIMAL_INS as b on a.ANIMAL_ID = b.ANIMAL_ID where b.ANIMAL_ID is null;
+
